@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Sunny Lee | Critical Computation Portfolio</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <title>Sunny Lee | Critical Computation Portfolio</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Secular+One&family=Staatliches&display=swap" rel="stylesheet">
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Secular+One&family=Staatliches&display=swap" rel="stylesheet">
 
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-
-  </head>
-  <body>
-    
-<!-- navigation menu -->
-    <nav>
-      <h1>Sunny Lee</h1>
-      <ul>
-        <li>Lost in Translation <a href="p1.html">#1</a></li>
-        <li>Lost and Found <a href="p2.html">#2</a></li>
-        <li>Face Shift <a href="p3.html">#3</a></li>
-        <li>Time <a href="p4.html">#4</a></li>
-        <li>Monster <a href="p5.html">#5</a></li>
-        <li>Optical Illusion <a href="p6.html">#6</a></li>
-        <li>Data <a href="p7.html">#7</a></li>
-        <li>Game <a href="p8.html">#8</a></li>
-        <li>Webcam <a href="p9.html">#9</a></li>
-      </ul>
-    </nav>
-    
-<!-- main content -->
-    <div class="content">
-      <h1>
-        Put something here
-      </h1>
-      <h2 class="special-h2">
-        Some other stuff
-      </h2>
-    </div>
-  </body>
+  <!-- import the webpage's javascript file -->
+  <script src="/script.js" defer></script>
+  <script>
+    function changeBackground1() {
+      var images = ['2-2 (3).png', 'Untitled-2 (3).png']; // Add more image filenames if needed
+      var randomIndex = Math.floor(Math.random() * images.length);
+      var imageUrl = 'Sadness/' + images[randomIndex];
+      document.body.style.backgroundImage = 'url("' + imageUrl + '")';
+    }
+  </script>ㄴ
+    <script>
+      function changeBackground2() {
+        var images = ['chinese.jpg',]; // Add more image filenames if needed
+        var randomIndex = Math.floor(Math.random() * images.length);
+        var imageUrl = 'Happiness/' + images[randomIndex];
+        document.body.style.backgroundImage = 'url("' + imageUrl + '")';
+      }
+    </script>
+    <script>
+      function changeBackground3() {
+        var images = ['AI.webp', 'AI2.webp']; // Add more image filenames if needed
+        var randomIndex = Math.floor(Math.random() * images.length);
+        var imageUrl = 'Other/' + images[randomIndex];
+        document.body.style.backgroundImage = 'url("' + imageUrl + '")';
+      }
+    </script>  
+</head>
+<body>
+  <!-- navigation menu -->
+  <nav>
+    <h1>Dictionary</h1>
+    <h2 class="special-h2">
+      Translate the Non-transitive
+    </h2>
+    <p>Do you REALLY know what you are feeling???</p>
+    <p>I am feeling...</p>
+    <ul>
+      <li><button onclick="changeBackground1()">SADNESS</button></li>
+      <li><button onclick="changeBackground2()">Happiness</button></li>
+      <li><button onclick="changeBackground3()">Other</button></li>
+    </ul>
+  </nav>
+  <!-- main content -->
+  <div class="content">
+  </div>
+</body>
 </html>
